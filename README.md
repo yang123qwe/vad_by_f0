@@ -8,6 +8,7 @@ https://github.com/yl4579/PitchExtractor
 1. 按照Data的例子准备好数据
 2. python train.py (训练)
 3. vad 和 f0的提取使用get_path_feat.py
+4. 预训练模型在 ./pretrained_model/model.pth
 
 主要环境：python 3.6.13  
 torch==1.8.0   

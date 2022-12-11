@@ -1,5 +1,5 @@
 # vad_by_f0
-vad and f0
+音频vad处理 和 提取f0
 
 # 致谢：
 https://github.com/yl4579/PitchExtractor

@@ -1,0 +1,37 @@
+log_dir:  demo/
+save_freq: 1
+device: "cpu"
+epochs: 100
+batch_size: 13
+num_workers: 16
+pretrained_model: ""
+
+f0_shai: 45
+# 数据格式：
+# audio path|spker id
+train_data: "./Data/train.txt"
+train_data: "./Data/val.txt"
+
+optimizer_params:
+  lr: 0.00025
+  pct_start: 0.1
+  final_div_factor: 10
+
+loss_params:
+  lambda_f0: 0.1
+  # lambda_f0:  2
+
+dataset_params:
+
+  ##### 24000
+  sample_rate: 24000 
+  n_mels: 80
+  n_fft: 1024
+  win_length: 1024
+  hop_length: 240
+  max_mel_length: 192
+
+  data_augmentation: true
+  verbose: true
+  bad_F0: 5
+ 
